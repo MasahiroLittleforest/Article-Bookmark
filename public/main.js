@@ -13,3 +13,8 @@ document.getElementById('open_all').onclick = function () {
     window.open(url, '_blank');
   }
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+  var elem = document.querySelectorAll('.modal');
+  var instance = M.Modal.init(elem);
+});
